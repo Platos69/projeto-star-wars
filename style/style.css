@@ -109,3 +109,45 @@ html{
     font-weight: bold;
     height: 30px;
 }   
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personagem-info {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.personagem-info .personagem-img {
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 8px; 
+    box-shadow: rgba(194, 194, 194, 0.25) 0px 10px 25px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.personagem-dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+
+.personagem-dados p {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+}
+
+.personagem-dados p span {
+    font-size: 16px;
+}

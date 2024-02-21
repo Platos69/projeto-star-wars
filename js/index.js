@@ -21,7 +21,7 @@ function renderizarPersonagens(items){
         const divPersona = document.createElement('div')
         divPersona.innerHTML = `
             <div class='personagem-caixa'>
-                <img src='./image/perso${index}.png'>
+                <img src='../image/perso${index}.png'>
                 <div>
                     <h3>
                         ${item.name}
@@ -29,7 +29,16 @@ function renderizarPersonagens(items){
                 </div>
             </div>
         `;
+
+        divPersona.addEventListener('click', () => {
+            detalhesPersonagem(index)
+        })
+
         divPersona.classList.add('personagem')
         container.appendChild(divPersona)
     })
+}
+
+function detalhesPersonagem(index) {
+    window.location.href = `./pages/person.html?index=${index}`
 }
